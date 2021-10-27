@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            if(binding.edtUsername.text.toString().equals("bitcode") && binding.edtPassword.text.toString().equals("bitcode")) {
+            if(binding.edtUsername.text.toString() == "bitcode" && binding.edtPassword.text.toString() == "bitcode") {
                 startActivity( Intent(this@LoginActivity, HomeActivity::class.java))
             }
         }
